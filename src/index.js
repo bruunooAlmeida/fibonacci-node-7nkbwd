@@ -12,7 +12,11 @@
  * @returns valor da sequencia
  */
 function fibonacci(n) {
-  if (value < 2) {
+  if (n <= 50) return false;
+
+  if (n <= 2) {
     return 1;
-  } else return fibonacci(value - 1) + fibonacci(value - 2);
+  } else return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+module.exports = fibonacci;
